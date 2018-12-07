@@ -1,6 +1,52 @@
-nav {
+$pad: 1rem;
+$ctr: center;
+
+* {
+    box-sizing: border-box;
+  }
+
+  html, body {
+	font-family: 'Crimson Text', serif;
+	overflow-x: hidden;
+  }
+
+  nav {
 	.logo {
-		height: 30px;
-		width: 30px;
+	  height: 35px;
+	  width: 35px;
 	}
-}
+  }
+
+  .nav-link {
+	  font-size: 22px;
+  }
+
+  header {
+	  padding: 40px $pad 0 $pad;
+	  h1 {
+		font-weight: bold;
+		text-align: $ctr;
+	  }
+	  h2 {
+		text-align: $ctr;
+		font-size: 25px;
+		font-style: italic;
+	  }
+  }
+
+  #about {
+	  display: flex;	
+	  margin-top: 80px;
+	  padding-left: 80px;
+	  padding-right: 80px;
+	  .profile-pic {
+		height: 400px;
+		width: auto;
+		display: block;
+	  }
+	  .about-me {
+		flex: 1;
+		font-size: 18px;
+		padding-left: 30px;
+	  }
+  }
