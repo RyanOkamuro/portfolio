@@ -49,9 +49,45 @@ header h2 {
   line-height: 40px;
 }
 
+#skills {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 #skills h3 {
+  font-size: 35px;
   padding-top: 80px;
   text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#skills .coding-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+#skills .coding-skills .all-skills {
+  flex: 1;
+  list-style-position: inside;
+}
+#skills .coding-skills .all-skills .skill-img {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#skills .coding-skills .all-skills h4, #skills .coding-skills .all-skills h5, #skills .coding-skills .all-skills h6 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+#skills .coding-skills .all-skills .skill-list {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+#skills .coding-skills .all-skills .skill-list li {
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 10000px) {
@@ -60,18 +96,18 @@ header h2 {
   }
 }
 @media only screen and (max-width: 1080px) {
-  #about {
+  #about, #skills {
     width: 800px;
   }
 }
 @media only screen and (max-width: 900px) {
-  #about {
+  #about, #skills {
     flex-direction: column;
     width: auto;
     padding-left: 20px;
     padding-right: 20px;
   }
-  #about .profile-pic {
+  #about .profile-pic, #skills .profile-pic {
     height: 500px;
     margin-right: auto;
     margin-left: auto;

@@ -38,7 +38,7 @@ $ctr: center;
 	  display: flex;	
 	  margin-top: 80px;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: $ctr;
 		width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
@@ -55,10 +55,44 @@ $ctr: center;
   }
 
   #skills {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
 	  h3 {
+			font-size: 35px;
 		  padding-top: 80px;
-		  text-align: center;
-	  }
+			text-align: $ctr;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		.coding-skills {
+			display: flex;
+			flex-wrap: wrap;
+				.all-skills {
+					flex: 1;
+					list-style-position: inside;
+						.skill-img {
+							width: 90px;
+							height: 90px;
+							display: block;
+							margin-right: auto;
+							margin-left: auto;
+						}
+						h4, h5, h6 {
+							text-align: $ctr;
+							font-size: 25px;
+							font-weight: bold;
+						}
+						.skill-list {
+							text-align: $ctr;
+							list-style-type: none;
+							padding: 0;
+							li {
+								font-size: 18px;
+							}
+					}
+				}
+		}
 	}
 
 	@media only screen and (max-width: 10000px)  {
@@ -70,13 +104,13 @@ $ctr: center;
 	}
 	
 	@media only screen and (max-width: 1080px)  {
-		#about {
+		#about, #skills {
 			width: 800px;
 		}
 	}
 	
 	@media only screen and (max-width: 900px)  {
-		#about {
+		#about, #skills {
 			flex-direction: column;
 			width: auto;
 			padding-left: 20px;
