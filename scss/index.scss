@@ -49,7 +49,7 @@ $ctr: center;
 			}
 			.about-me {
 				flex: 1;
-				font-size: 18px;
+				font-size: 20px;
 				line-height: 40px;
 			}
   }
@@ -95,17 +95,194 @@ $ctr: center;
 		}
 	}
 
+	#portfolio {
+		background-color: #f8f9fa;
+		margin-left: auto;
+		margin-right: auto;
+		.capstone-projects-main-title {
+			font-size: 35px;
+		  	padding-top: 40px;
+			text-align: $ctr;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+		.capstone-projects {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center; 
+			.projects {
+				padding: 10px;
+				margin: 10px;
+				box-shadow: 1px 2px 2px 1px #888;
+				
+				.capstone-title {
+					text-align: $ctr;
+					font-size: 25px;
+					font-weight: bold;
+				}
+				.capstone-languages {
+					text-align: $ctr;
+				}
+				.project-img {
+					padding: 15px;
+					height: 200px;
+					width: 400px;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.project-description {
+					display: block;
+					font-size: 17px;
+					padding-left: 15px;
+					padding-right: 15px;
+					width: 400px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.view-project-buttons {
+					text-align: $ctr;
+					.button-links, .button-links-git {
+						display: inline-block;
+						width: 70px;
+						padding: 5px;
+						background-color: #1976D2;
+						color: #F8F8FF;
+						border: 0.5px;
+						border-radius: 3px;
+						text-align: center;
+						margin: 5px 5px 2px 5px;
+						text-decoration: none;
+						cursor: pointer;
+					}
+					.button-links:hover,
+					.button-links:focus {
+						background-color: #2196F3;
+						-webkit-transition: background 0.1s;
+						-moz-transition: background 0.1s;
+						-o-transition: background 0.1s;
+						transition: background 0.1s;
+						outline: none;
+					}
+					.button-links-git {
+						background-color: white;
+						color: 	#606060;
+						box-shadow: 1px 1px 1px 1px #E8E8E8;
+					}
+					.button-links-git:hover,
+					.button-links-git:focus {
+						box-shadow: 1px 1px 1px 1px #A8A8A8;
+						color:	#080808;
+						-webkit-transition: background 0.1s;
+						-moz-transition: background 0.1s;
+						-o-transition: background 0.1s;
+						transition: background 0.1s;
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+
 	@media only screen and (max-width: 10000px)  {
 		#about {
 				.profile-pic {
-					height: 400px;
+					height: 500px;
 				}
 		}
+		#portfolio {
+			.capstone-projects {
+				margin-left: 0;
+				margin-right: 0;
+				.projects {
+					// width: 450px;
+					.project-description {
+						padding-left: 5px;
+						padding-right: 5px;
+						width: 390px;
+						}
+					.project-img {
+						padding: 10px;
+						height: 200px;
+						width: 400px;
+					}
+				}
+			}
+		}
 	}
+
+	// @media only screen and (max-width: 1900px)  {
+	// 	#portfolio {
+	// 		.capstone-projects {
+	// 			margin-left: 300px;
+	// 			margin-right: 300px;
+	// 		}
+	// 	}
+	// }
+
+	@media only screen and (max-width: 1900px)  {
+		#about {
+			.profile-pic {
+				height: 400px;
+			}
+		}
+		#portfolio {
+			.capstone-projects {
+				margin-left: 0;
+				margin-right: 0;
+				.projects {
+					.project-description {
+					padding-left: 5px;
+					padding-right: 5px;
+					width: 250px;
+					}
+					.project-img {
+						padding: 5px;
+						height: 150px;
+						width: 250px;
+					}
+				}
+			}
+		}
+	}
+
+
 	
-	@media only screen and (max-width: 1080px)  {
-		#about, #skills {
-			width: 800px;
+	// @media only screen and (max-width: 1500px)  {
+	// 	#portfolio {
+	// 		.capstone-projects {
+	// 			margin-left: 100px;
+	// 			margin-right: 100px;
+	// 		}
+	// 	}
+	// }
+
+	@media only screen and (max-width: 1260px)  {
+		#portfolio {
+			.capstone-projects {
+				margin-left: 100px;
+				margin-right: 100px;
+				.projects {
+					width: 350px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 976px)  {
+		#portfolio {
+			.capstone-projects {
+				margin-left: 60px;
+				margin-right: 60px;
+				.projects {
+					width: 270px;
+					.project-img {
+						padding: 5px;
+						height: 100px;
+						width: 200px;
+					}
+				}
+			}
 		}
 	}
 	
@@ -123,11 +300,22 @@ $ctr: center;
 		}
 	}
 	
+	@media only screen and (max-width: 720px)  {
+		#portfolio {
+			.capstone-projects {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+
 	@media only screen and (max-width: 500px)  {
 		#about {
 			.profile-pic {
 				height: 300px;
 			}
+			.about-me {
+				font-size: 18px;
+			}
 		}
-	}
-	
+	}	

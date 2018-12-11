@@ -45,7 +45,7 @@ header h2 {
 }
 #about .about-me {
   flex: 1;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 40px;
 }
 
@@ -90,14 +90,155 @@ header h2 {
   font-size: 18px;
 }
 
+#portfolio {
+  background-color: #f8f9fa;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .capstone-projects-main-title {
+  font-size: 35px;
+  padding-top: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#portfolio .capstone-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#portfolio .capstone-projects .projects {
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 2px 2px 1px #888;
+}
+#portfolio .capstone-projects .projects .capstone-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+#portfolio .capstone-projects .projects .capstone-languages {
+  text-align: center;
+}
+#portfolio .capstone-projects .projects .project-img {
+  padding: 15px;
+  height: 200px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .capstone-projects .projects .project-description {
+  display: block;
+  font-size: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .capstone-projects .projects .view-project-buttons {
+  text-align: center;
+}
+#portfolio .capstone-projects .projects .view-project-buttons .button-links, #portfolio .capstone-projects .projects .view-project-buttons .button-links-git {
+  display: inline-block;
+  width: 70px;
+  padding: 5px;
+  background-color: #1976D2;
+  color: #F8F8FF;
+  border: 0.5px;
+  border-radius: 3px;
+  text-align: center;
+  margin: 5px 5px 2px 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#portfolio .capstone-projects .projects .view-project-buttons .button-links:hover,
+#portfolio .capstone-projects .projects .view-project-buttons .button-links:focus {
+  background-color: #2196F3;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+  outline: none;
+}
+#portfolio .capstone-projects .projects .view-project-buttons .button-links-git {
+  background-color: white;
+  color: #606060;
+  box-shadow: 1px 1px 1px 1px #E8E8E8;
+}
+#portfolio .capstone-projects .projects .view-project-buttons .button-links-git:hover,
+#portfolio .capstone-projects .projects .view-project-buttons .button-links-git:focus {
+  box-shadow: 1px 1px 1px 1px #A8A8A8;
+  color: #080808;
+  -webkit-transition: background 0.1s;
+  -moz-transition: background 0.1s;
+  -o-transition: background 0.1s;
+  transition: background 0.1s;
+  outline: none;
+}
+
 @media only screen and (max-width: 10000px) {
+  #about .profile-pic {
+    height: 500px;
+  }
+
+  #portfolio .capstone-projects {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #portfolio .capstone-projects .projects .project-description {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 390px;
+  }
+  #portfolio .capstone-projects .projects .project-img {
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 1900px) {
   #about .profile-pic {
     height: 400px;
   }
+
+  #portfolio .capstone-projects {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #portfolio .capstone-projects .projects .project-description {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 250px;
+  }
+  #portfolio .capstone-projects .projects .project-img {
+    padding: 5px;
+    height: 150px;
+    width: 250px;
+  }
 }
-@media only screen and (max-width: 1080px) {
-  #about, #skills {
-    width: 800px;
+@media only screen and (max-width: 1260px) {
+  #portfolio .capstone-projects {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #portfolio .capstone-projects .projects {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 976px) {
+  #portfolio .capstone-projects {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  #portfolio .capstone-projects .projects {
+    width: 270px;
+  }
+  #portfolio .capstone-projects .projects .project-img {
+    padding: 5px;
+    height: 100px;
+    width: 200px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -113,9 +254,18 @@ header h2 {
     margin-left: auto;
   }
 }
+@media only screen and (max-width: 720px) {
+  #portfolio .capstone-projects {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 @media only screen and (max-width: 500px) {
   #about .profile-pic {
     height: 300px;
+  }
+  #about .about-me {
+    font-size: 18px;
   }
 }
 
