@@ -37,6 +37,7 @@ header h2 {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 80px;
 }
 #about .profile-pic {
   width: auto;
@@ -53,10 +54,10 @@ header h2 {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 80px;
 }
 #skills h3 {
   font-size: 35px;
-  padding-top: 80px;
   text-align: center;
   font-weight: bold;
   margin-bottom: 30px;
@@ -94,6 +95,7 @@ header h2 {
   background-color: #f8f9fa;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 80px;
 }
 #portfolio .capstone-projects-main-title {
   font-size: 35px;
@@ -176,6 +178,46 @@ header h2 {
   -o-transition: background 0.1s;
   transition: background 0.1s;
   outline: none;
+}
+
+#contact-ryan {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#contact-ryan .contact-me-title {
+  font-size: 35px;
+  padding-top: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#contact-ryan .contact-me-info {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#contact-ryan .contact-info-center {
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#contact-ryan .contact-info-center .contact-info-center > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#contact-ryan .contact-info-center a:hover {
+  text-decoration: none;
+}
+#contact-ryan .contact-info-center .contact-connect-me-email {
+  display: inline-block;
+  height: 50px;
+  width: 60px;
+}
+#contact-ryan .contact-info-center .contact-connect-me, #contact-ryan .contact-info-center .contact-connect-me {
+  height: 50px;
+  width: 50px;
 }
 
 @media only screen and (max-width: 10000px) {
@@ -266,6 +308,12 @@ header h2 {
   }
   #about .about-me {
     font-size: 18px;
+  }
+
+  #contact-ryan .contact-me-info {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
   }
 }
 
