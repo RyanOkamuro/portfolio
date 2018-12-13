@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="./css/index.css" rel="stylesheet" media="screen">
 </head>
-    <body>
+    <body data-spy="scroll" data-target="#mainNav">
         <nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#header"><img class="logo" src="./assets/R_logo.gif" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,6 +19,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
                       </li>
@@ -33,14 +36,15 @@
         </nav>
         <header role="banner" id="header">
             <h1>Welcome, I'm Ryan</h1>
-            <h2>I am a Software Engineer</h2>
+            <h2>Front End Software Engineer</h2>
         </header>
-        <main role="main" data-spy="scroll" data-target="#mainNav" data-offset="0">
+        <main role="main" data-offset="0">
             <section role="region" id="about">
                 <img src="./assets/me.jpg" alt="profile-pic" class="profile-pic">
                 <div class="about-me">
-                    <p> For 9 years, I have been coming back and forth from China. Now, I am back in America as Software Engineer. Prior to committing myself to learn JavaScript, I was a Project Manager at Foxconn working on new product development. </p>  
-                    <p> When I'm not coding, I'm reading TechCrunch about the latest news in tech, traveling to understand the world, or out meeting new people! </p>
+                    <p>I'm a Front End Software Engineer with Project Management experience.</p>
+                    <p>Across 9 years, I have been coming back and forth from China. Prior to working in web development, I was a Project Manager at Foxconn working on new product development.</p>  
+                    <p>When I'm not coding, I'm reading TechCrunch about the latest news in tech, traveling to understand the world, or out meeting new people.</p>
                 </div>
             </section>
             <section role="region" id="skills">

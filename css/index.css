@@ -7,6 +7,10 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  position: relative;
+}
+
 nav .fixed-top {
   position: fixed;
 }
@@ -278,6 +282,11 @@ main {
     width: 250px;
   }
 }
+@media only screen and (max-width: 1050px) {
+  #about {
+    width: 800px;
+  }
+}
 @media only screen and (max-width: 976px) {
   #portfolio-projects .capstone-projects {
     margin-left: 60px;
@@ -315,6 +324,10 @@ main {
   }
 }
 @media only screen and (max-width: 500px) {
+  header h1 {
+    font-size: 38px;
+  }
+
   #about .profile-pic {
     height: 300px;
   }

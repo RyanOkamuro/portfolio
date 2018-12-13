@@ -8,7 +8,11 @@
 	html, body {
 		font-family: 'Crimson Text', serif;
 		overflow-x: hidden;
-  	}
+	  }
+	
+	body {
+		position: relative;
+	}
 
 	nav {
 		.fixed-top {
@@ -298,6 +302,12 @@
 		}
 	}
 
+	@media only screen and (max-width: 1050px)  {
+		#about {
+			width: 800px;
+		}
+	}
+
 	@media only screen and (max-width: 976px)  {
 		#portfolio-projects {
 			.capstone-projects {
@@ -342,6 +352,11 @@
 	}
 
 	@media only screen and (max-width: 500px)  {
+		header {
+			h1 {
+				font-size: 38px;
+			}
+		}
 		#about {
 			.profile-pic {
 				height: 300px;
