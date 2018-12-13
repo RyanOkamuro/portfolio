@@ -7,6 +7,9 @@ html, body {
   overflow-x: hidden;
 }
 
+nav .fixed-top {
+  position: fixed;
+}
 nav .logo {
   height: 35px;
   width: 35px;
@@ -17,7 +20,7 @@ nav .logo {
 }
 
 header {
-  padding: 40px 1rem 0 1rem;
+  padding: 80px 10px 0 10px;
 }
 header h1 {
   font-weight: bold;
@@ -29,6 +32,10 @@ header h2 {
   font-style: italic;
 }
 
+main {
+  position: relative;
+}
+
 #about {
   display: flex;
   margin-top: 80px;
@@ -37,7 +44,6 @@ header h2 {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 80px;
 }
 #about .profile-pic {
   width: auto;
@@ -54,13 +60,14 @@ header h2 {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 #skills h3 {
   font-size: 35px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 #skills .coding-skills {
   display: flex;
@@ -91,46 +98,46 @@ header h2 {
   font-size: 18px;
 }
 
-#portfolio {
+#portfolio-projects {
   background-color: #f8f9fa;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 80px;
   padding-bottom: 80px;
 }
-#portfolio .capstone-projects-main-title {
+#portfolio-projects .capstone-projects-main-title {
   font-size: 35px;
   padding-top: 40px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
-#portfolio .capstone-projects {
+#portfolio-projects .capstone-projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#portfolio .capstone-projects .projects {
+#portfolio-projects .capstone-projects .projects {
   padding: 10px;
   margin: 10px;
   box-shadow: 1px 2px 2px 1px #888;
 }
-#portfolio .capstone-projects .projects .capstone-title {
+#portfolio-projects .capstone-projects .projects .capstone-title {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
 }
-#portfolio .capstone-projects .projects .capstone-languages {
+#portfolio-projects .capstone-projects .projects .capstone-languages {
   text-align: center;
 }
-#portfolio .capstone-projects .projects .project-img {
+#portfolio-projects .capstone-projects .projects .project-img {
   padding: 15px;
   height: 200px;
   width: 400px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 10px auto;
 }
-#portfolio .capstone-projects .projects .project-description {
+#portfolio-projects .capstone-projects .projects .project-description {
   display: block;
   font-size: 17px;
   padding-left: 15px;
@@ -139,10 +146,10 @@ header h2 {
   margin-left: auto;
   margin-right: auto;
 }
-#portfolio .capstone-projects .projects .view-project-buttons {
+#portfolio-projects .capstone-projects .projects .view-project-buttons {
   text-align: center;
 }
-#portfolio .capstone-projects .projects .view-project-buttons .button-links, #portfolio .capstone-projects .projects .view-project-buttons .button-links-git {
+#portfolio-projects .capstone-projects .projects .view-project-buttons .button-links, #portfolio-projects .capstone-projects .projects .view-project-buttons .button-links-git {
   display: inline-block;
   width: 70px;
   padding: 5px;
@@ -155,8 +162,8 @@ header h2 {
   text-decoration: none;
   cursor: pointer;
 }
-#portfolio .capstone-projects .projects .view-project-buttons .button-links:hover,
-#portfolio .capstone-projects .projects .view-project-buttons .button-links:focus {
+#portfolio-projects .capstone-projects .projects .view-project-buttons .button-links:hover,
+#portfolio-projects .capstone-projects .projects .view-project-buttons .button-links:focus {
   background-color: #2196F3;
   -webkit-transition: background 0.1s;
   -moz-transition: background 0.1s;
@@ -164,13 +171,13 @@ header h2 {
   transition: background 0.1s;
   outline: none;
 }
-#portfolio .capstone-projects .projects .view-project-buttons .button-links-git {
+#portfolio-projects .capstone-projects .projects .view-project-buttons .button-links-git {
   background-color: white;
   color: #606060;
   box-shadow: 1px 1px 1px 1px #E8E8E8;
 }
-#portfolio .capstone-projects .projects .view-project-buttons .button-links-git:hover,
-#portfolio .capstone-projects .projects .view-project-buttons .button-links-git:focus {
+#portfolio-projects .capstone-projects .projects .view-project-buttons .button-links-git:hover,
+#portfolio-projects .capstone-projects .projects .view-project-buttons .button-links-git:focus {
   box-shadow: 1px 1px 1px 1px #A8A8A8;
   color: #080808;
   -webkit-transition: background 0.1s;
@@ -180,42 +187,41 @@ header h2 {
   outline: none;
 }
 
-#contact-ryan {
+#contact {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 80px 20px 80px 20px;
 }
-#contact-ryan .contact-me-title {
+#contact .contact-me-title {
   font-size: 35px;
   padding-top: 40px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
-#contact-ryan .contact-me-info {
+#contact .contact-me-info {
   text-align: center;
   font-size: 20px;
   margin-bottom: 50px;
 }
-#contact-ryan .contact-info-center {
+#contact .contact-info-center {
   display: block;
   text-align: center;
   margin-bottom: 50px;
 }
-#contact-ryan .contact-info-center .contact-info-center > a {
+#contact .contact-info-center .contact-info-center > a {
   text-decoration: none;
   color: #ffffff;
 }
-#contact-ryan .contact-info-center a:hover {
+#contact .contact-info-center a:hover {
   text-decoration: none;
 }
-#contact-ryan .contact-info-center .contact-connect-me-email {
+#contact .contact-info-center .contact-connect-me-email {
   display: inline-block;
   height: 50px;
   width: 60px;
 }
-#contact-ryan .contact-info-center .contact-connect-me, #contact-ryan .contact-info-center .contact-connect-me {
+#contact .contact-info-center .contact-connect-me, #contact .contact-info-center .contact-connect-me {
   height: 50px;
   width: 50px;
 }
@@ -225,16 +231,16 @@ header h2 {
     height: 500px;
   }
 
-  #portfolio .capstone-projects {
+  #portfolio-projects .capstone-projects {
     margin-left: 0;
     margin-right: 0;
   }
-  #portfolio .capstone-projects .projects .project-description {
+  #portfolio-projects .capstone-projects .projects .project-description {
     padding-left: 5px;
     padding-right: 5px;
-    width: 390px;
+    width: 400px;
   }
-  #portfolio .capstone-projects .projects .project-img {
+  #portfolio-projects .capstone-projects .projects .project-img {
     padding: 10px;
     height: 200px;
     width: 400px;
@@ -245,42 +251,48 @@ header h2 {
     height: 400px;
   }
 
-  #portfolio .capstone-projects {
+  #portfolio-projects .capstone-projects {
     margin-left: 0;
     margin-right: 0;
   }
-  #portfolio .capstone-projects .projects .project-description {
+  #portfolio-projects .capstone-projects .projects .project-description {
     padding-left: 5px;
     padding-right: 5px;
-    width: 250px;
+    width: 280px;
   }
-  #portfolio .capstone-projects .projects .project-img {
+  #portfolio-projects .capstone-projects .projects .project-img {
     padding: 5px;
-    height: 150px;
-    width: 250px;
+    height: 140px;
+    width: 280px;
   }
 }
-@media only screen and (max-width: 1260px) {
-  #portfolio .capstone-projects {
+@media only screen and (max-width: 1300px) {
+  #portfolio-projects .capstone-projects {
     margin-left: 100px;
     margin-right: 100px;
   }
-  #portfolio .capstone-projects .projects {
+  #portfolio-projects .capstone-projects .projects {
     width: 350px;
+  }
+  #portfolio-projects .capstone-projects .projects .project-description, #portfolio-projects .capstone-projects .projects .project-img {
+    width: 250px;
   }
 }
 @media only screen and (max-width: 976px) {
-  #portfolio .capstone-projects {
+  #portfolio-projects .capstone-projects {
     margin-left: 60px;
     margin-right: 60px;
   }
-  #portfolio .capstone-projects .projects {
+  #portfolio-projects .capstone-projects .projects {
     width: 270px;
   }
-  #portfolio .capstone-projects .projects .project-img {
+  #portfolio-projects .capstone-projects .projects .project-img {
     padding: 5px;
-    height: 100px;
-    width: 200px;
+    height: 125px;
+    width: 225px;
+  }
+  #portfolio-projects .capstone-projects .projects .project-description {
+    width: 225px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -297,7 +309,7 @@ header h2 {
   }
 }
 @media only screen and (max-width: 720px) {
-  #portfolio .capstone-projects {
+  #portfolio-projects .capstone-projects {
     margin-left: 0;
     margin-right: 0;
   }
@@ -310,7 +322,27 @@ header h2 {
     font-size: 18px;
   }
 
-  #contact-ryan .contact-me-info {
+  #skills {
+    padding-bottom: 0;
+  }
+  #skills h3 {
+    margin-bottom: 30px;
+  }
+
+  #portfolio-projects {
+    padding-bottom: 0;
+  }
+  #portfolio-projects .capstone-projects-main-title {
+    margin-bottom: 30px;
+  }
+
+  #contact {
+    padding-bottom: 0;
+  }
+  #contact .contact-me-title {
+    margin-bottom: 30px;
+  }
+  #contact .contact-me-info {
     text-align: center;
     font-size: 18px;
     margin-bottom: 50px;
