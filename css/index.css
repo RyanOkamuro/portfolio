@@ -131,7 +131,8 @@ main {
 #portfolio-projects .capstone-projects .projects {
   padding: 10px;
   margin: 10px;
-  box-shadow: 1px 2px 2px 1px #888;
+  background-color: #FFFFFF;
+  box-shadow: 1px 2px 2px 1px #E8E8E8;
 }
 #portfolio-projects .capstone-projects .projects .capstone-title {
   text-align: center;
@@ -229,12 +230,11 @@ main {
 }
 #contact .contact-info-center .contact-connect-me-email {
   display: inline-block;
-  height: 50px;
-  width: 60px;
+  height: 32px;
+  width: 37px;
 }
 #contact .contact-info-center .contact-connect-me, #contact .contact-info-center .contact-connect-me {
-  height: 50px;
-  width: 50px;
+  height: 32px;
 }
 
 @media only screen and (max-width: 10000px) {
@@ -291,6 +291,10 @@ main {
 }
 @media only screen and (max-width: 1050px) {
   #about {
+    width: 800px;
+  }
+
+  #skills {
     width: 800px;
   }
 }
