@@ -1,10 +1,10 @@
 
 Ryan Okamuro Portfolio
 =============
-A collection of my capstone projects.  
+A collection of my projects.  
 
 
-Screenshots
+Screenshot
 -----------
 
 ![Landing Page](https://raw.githubusercontent.com/RyanOkamuro/portfolio/master/assets/Portfolio_Landing_Page.jpg)
