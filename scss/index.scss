@@ -77,11 +77,10 @@
   	}
 
   	#skills {
-		width: 1000px;
+		padding: 80px 400px;
 		margin-left: auto;
 		margin-right: auto;
-		padding-top: 80px;
-		padding-bottom: 80px;
+		background-color: #F8F9FA;
 	  	h3 {
 			font-size: 35px;
 			text-align: $ctr;
@@ -119,7 +118,7 @@
 	}
 
 	#portfolio-projects {
-		background-color: #f8f9fa;
+		background-color: #FFFFFF;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 80px;
@@ -189,7 +188,7 @@
 						outline: none;
 					}
 					.button-links-git {
-						background-color: white;
+						background-color: #FFFFFF;
 						color:	#606060;
 						box-shadow: 1px 1px 1px 1px #E8E8E8;
 					}
@@ -212,6 +211,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		padding: 80px 20px 80px 20px;
+		background-color: #F8F9FA;
 		.contact-me-title {
 			font-size: 35px;
 			padding-top: 40px;
@@ -278,6 +278,10 @@
 				height: 400px;
 			}
 		}
+		#skills {
+			padding-left: 300px;
+			padding-right: 300px;
+		}
 		#portfolio-projects {
 			.capstone-projects {
 				margin-left: 0;
@@ -299,6 +303,10 @@
 	}
 
 	@media only screen and (max-width: 1300px)  {
+		#skills {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
 		#portfolio-projects {
 			.capstone-projects {
 				margin-left: 100px;
@@ -316,9 +324,10 @@
 	@media only screen and (max-width: 1050px)  {
 		#about {
 			width: 800px;
-		}
-		#skills {
-			width: 800px;
+			margin-bottom: 0;
+			.about-me {
+				line-height: 37px;
+			}
 		}
 	}
 
@@ -352,6 +361,15 @@
 				height: 500px;
 				margin-right: auto;
 				margin-left: auto;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 823px)  {
+		#skills {
+			.all-skills {
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 		}
 	}
